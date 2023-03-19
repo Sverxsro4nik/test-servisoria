@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="form" action="./thanksPage.html">
+        <legend class="title form__title">Мобильным приложением Онлайн легко пользоваться</legend>
+        <div class="form__field field">
+            <div class="field__title">
+                Укажите как вы оцениваете функционал приложения
+            </div>
+            <div class="field__label">(где 1-абсолютно не согласен, а 10-абсолютно согласен)</div>
+            <div class="range-container">
+                <input type="range" name="functionalEvaluation" id="functionalEvaluation" class="field__range" min="1"
+                    max="10" value=1 required>
+                <span class="">1</span>
+            </div>
+        </div>
+        <div class="form__field field">
+            <div class="field__title">
+                Уточните, какой именно функционал требует улучшения в интернет-банке?
+            </div>
+            <div class="field__label">(где 1-абсолютно не согласен, а 10-абсолютно согласен)</div>
+            <div class="range-container">
+                <input type="range" name="addFunctions" id="addFunctions" class="field__range" min="1" max="10" value=1
+                    required>
+                <p class="functions__value">1</p>
+            </div>
+        </div>
+        <div class="form__field field">
+            <div class="field__title">
+                Уточните, какой именно функционал требует улучшения в интернет-банке?
+            </div>
+            <div class="field__label">(Возможны несколько вариантов)</div>
+            <ul class="field__checkbox-list">
+                <li class="checkbox__item">
+                    <input type="checkbox" name="products" id="products" class="main-checkbox">
+                    <label for="products">Информация по вашим продуктам(счета, карты, вклады и т.д.)</label>
+                    <ul class="checkbox-group">
+                        <li class="checbox-group__item">
+                            <label for="currentAccounts">Текущие счета</label>
+                            <input type="checkbox" name="currentAccounts" id="currentAccounts">
+                        </li>
+                        <li class="checbox-group__item">
+                            <label for="savingsAccounts">Накопительные счета</label>
+                            <input type="checkbox" name="savingsAccounts" id="savingsAccounts">
+                        </li>
+                        <li class="checbox-group__item">
+                            <label for="debitCards">Дебетовые карты</label>
+                            <input type="checkbox" name="debitCards" id="debitCards">
+                        </li>
+                        <li class="checbox-group__item">
+                            <label for="creditCard">Кредитные карты</label>
+                            <input type="checkbox" name="creditCard" id="creditCard">
+                        </li>
+                        <li class="checbox-group__item">
+                            <label for="contributions">Вклады</label>
+                            <input type="checkbox" name="contributions" id="contributions">
+                        </li>
+                        <li class="checbox-group__item">
+                            <label for="consumerLoans">Потребительские кредиты</label>
+                            <input type="checkbox" name="consumerLoans" id="consumerLoans">
+                        </li>
+                        <li class="checbox-group__item">
+                            <label for="carLoans">Автокредиты</label>
+                            <input type="checkbox" name="carLoans" id="carLoans">
+                        </li>
+                        <li class="checbox-group__item">
+                            <label for="mortgage">Ипотека</label>
+                            <input type="checkbox" name="mortgage" id="mortgage">
+                        </li>
+                    </ul>
+                </li>
+                <li class="checkbox__item">
+                    <input type="checkbox" name="services" id="services">
+                    <label for="services">Оплата услуг(ЖКХ, мобильная связь, и т.д.)</label>
+                    <ul class="checkbox-group">
+                        <li class="checbox-group__item">
+                            <label for="gkh">ЖКХ</label>
+                            <input type="checkbox" name="gkh" id="gkh">
+                        </li>
+                        <li class="checbox-group__item">
+                            <label for="mobileConnection">Мобильная связь</label>
+                            <input type="checkbox" name="mobileConnection" id="mobileConnection">
+                        </li>
+                        <li class="checbox-group__item">
+                            <label for="internet">Интернет</label>
+                            <input type="checkbox" name="internet" id="internet">
+                        </li>
+                        <li class="checbox-group__item">
+                            <label for="anotherServices">Другие услуги</label>
+                            <input type="checkbox" name="anotherServices" id="anotherServices">
+                        </li>
+                    </ul>
+                </li>
+                <li class="checkbox__item">
+                    <input type="checkbox" name="transaction" id="transaction">
+                    <label for="transaction">Переводы</label>
+                    <ul class="checkbox-group">
+                        <li class="checbox-group__item">
+                            <label for="betweenMyAccounts">Переводы между своими счетами</label>
+                            <input type="checkbox" name="betweenMyAccounts" id="betweenMyAccounts">
+                        </li>
+                        <li class="checbox-group__item">
+                            <label for="currencyExchange">Обмен валют</label>
+                            <input type="checkbox" name="currencyExchange" id="currencyExchange">
+                        </li>
+                        <li class="checbox-group__item">
+                            <label for="transfersByPhoneNumber">Переводы по номеру телефона</label>
+                            <input type="checkbox" name="transfersByPhoneNumber" id="transfersByPhoneNumber">
+                        </li>
+                        <li class="checbox-group__item">
+                            <label for="transferByCardNumber">Переводы по номеру карты</label>
+                            <input type="checkbox" name="transferByCardNumber" id="transferByCardNumber">
+                        </li>
+                        <li class="checbox-group__item">
+                            <label for="transfersByDetails">Переводы по реквизитам</label>
+                            <input type="checkbox" name="transfersByDetails" id="transfersByDetails">
+                        </li>
+                        <li class="checbox-group__item">
+                            <label for="transfersByQR">Переводы с помощью QR-кодов</label>
+                            <input type="checkbox" name="transfersByQR" id="transfersByQR">
+                        </li>
+                        <li class="checbox-group__item">
+                            <label for="swiftTransfers">SWIFT-переводы</label>
+                            <input type="checkbox" name="swiftTransfers" id="swiftTransfers">
+                        </li>
+                    </ul>
+                </li>
+                <li class="checkbox__item">
+                    <input type="checkbox" name="another" id="another">
+                    <label for="another">Другое</label>
+                    <ul class="checkbox-group">
+                        <li class="checbox-group__item">
+                            <label for="applicationSettings">Настройки приложения</label>
+                            <input type="checkbox" name="applicationSettings" id="applicationSettings">
+                        </li>
+                        <li class="checbox-group__item">
+                            <label for="tariffInformation">Информация о тарифе</label>
+                            <input type="checkbox" name="tariffInformation" id="tariffInformation">
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button class="form__button" type="submit">Отправить</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
